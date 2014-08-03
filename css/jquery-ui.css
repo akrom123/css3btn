@@ -192,9 +192,17 @@
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: 1px solid #cccccc;
-	background: #f6f6f6 url("images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x;
+    border-radius: 50%;
+	background: #ccc;
 	font-weight: bold;
 	color: #1c94c4;
+    background: rgb(209, 225, 216);
+    background: -moz-linear-gradient(91deg, rgb(209, 225, 216) 30%, rgb(227, 234, 241) 70%);
+    background: -webkit-linear-gradient(91deg, rgb(209, 225, 216) 30%, rgb(227, 234, 241) 70%);
+    background: -o-linear-gradient(91deg, rgb(209, 225, 216) 30%, rgb(227, 234, 241) 70%);
+    background: -ms-linear-gradient(91deg, rgb(209, 225, 216) 30%, rgb(227, 234, 241) 70%);
+    background: linear-gradient(181deg, rgb(209, 225, 216) 30%, rgb(227, 234, 241) 70%);
+
 }
 .ui-state-default a,
 .ui-state-default a:link,

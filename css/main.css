@@ -1,4 +1,11 @@
 body {
-  background: #ffffff;
+  background: #2b2b2b;
+  color: #ffffff;
+}
+.well {
+  color: #000;
+}
+.result-textarea {
+  height: 100px;
 }
 /*# sourceMappingURL=main.css.map */
