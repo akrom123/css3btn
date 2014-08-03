@@ -6,9 +6,12 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/prism.css"/>
+    <link rel="stylesheet" href="css/colorpicker.css"/>
 </head>
 <body>
 
+<style class="button-styles"></style>
 
 <div class="container">
 <h1>Css3 Button Generator</h1>
@@ -20,7 +23,7 @@
             </div>
             <div class="well">
                 <p>Border-size</p>
-                <div class="ui-border_size ui"></div>
+                <div class="ui-border_width ui"></div>
             </div>
             <div class="well">
                 <p>Padding horizontal</p>
@@ -31,25 +34,36 @@
                 <div class="ui-padding_y ui"></div>
             </div>
             <div class="well">
-                <p>Text</p>
-                <input type="text" class="form-control"/>
+                <p>Background</p>
+                <div class="ui-background_color ui"></div>
             </div>
-            <div class="changed well"></div>
+            <div class="well">
+                <p>Font Color</p>
+                <div class="ui-font_color ui"></div>
+            </div>
+            <div class="well">
+                <p>Text</p>
+                <input type="text" class="ui-text form-control"/>
+            </div>
 		</div>
 		<div class="col-sm-6">
             <div class="well">
                 <p>Result Btn</p>
-                <button class="result-btn btn">
+                <button class="button">
                 asdasdasd
                 </button>
             </div>
             <div class="well">
                 <p>Result HTML</p>
-                <div class="result-textarea form-control"></div>
+                <pre class=" language-markup">
+                    <code id="result-html" class="result-textarea language-markup"></code>
+                </pre>
             </div>
             <div class="well">
                 <p>Result CSS</p>
-                <div class="result-textarea form-control"></div>
+                <pre class=" language-css">
+                    <code id="result-css" class="result-textarea language-css"></code>
+                </pre>
             </div>
 		</div>
 	</div>
@@ -57,6 +71,8 @@
 
 <script src="js/min/jquery-1.11.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/colorpicker.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
