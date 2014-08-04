@@ -18,12 +18,30 @@ body {
   font-family: 'capture_itregular';
   background: @color-bg;
   color: @color;
+  background: url(../img/bg.png);
+}
+
+label {
+  font-weight: normal;
 }
 
 
 .well {
-  color: #000;
+  border: 1px solid #fff;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
   font-size: 20px;
+  -webkit-transition: .6s ease;
+  -moz-transition: .6s ease;
+  -ms-transition: .6s ease;
+  -o-transition: .6s ease;
+  transition: .6s ease;
+  .container-fluid {
+    display: none;
+  }
+  .row {
+    margin-bottom: 15px;
+  }
 }
 
 .result-textarea {
@@ -36,10 +54,36 @@ body {
   border: 2px solid #000;
 }
 
+.form-control {
+  color: #000;
+}
+
 button {
   padding: 0;
   font-family: Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L" , sans-serif, sans-serif;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -ms-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
 }
+
+.checkbox {
+  display: inline-block;
+}
+
+.gradient {
+  display: none;
+  span {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.show {
+  display: inline-block !important;
+}
+
 
 .ui-class {
   width: auto;

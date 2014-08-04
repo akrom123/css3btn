@@ -92,9 +92,8 @@
 }
 .ui-slider .ui-slider-handle {
 	position: absolute;
-	z-index: 2;
-	width: 1.2em;
-	height: 1.2em;
+	width: 30px;
+	height: 30px;
 	cursor: default;
 	-ms-touch-action: none;
 	touch-action: none;
@@ -118,7 +117,7 @@
 	height: .8em;
 }
 .ui-slider-horizontal .ui-slider-handle {
-	top: -.3em;
+	top: -8px;
 	margin-left: -.6em;
 }
 .ui-slider-horizontal .ui-slider-range {
@@ -170,7 +169,7 @@
 }
 .ui-widget-content {
 	border: 1px solid #dddddd;
-	background: #eeeeee url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x;
+	background: #222;
 	color: #333333;
 }
 .ui-widget-content a {
@@ -178,7 +177,7 @@
 }
 .ui-widget-header {
 	border: 1px solid #e78f08;
-	background: #f6a828 url("images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x;
+	background: #f6a828;
 	color: #ffffff;
 	font-weight: bold;
 }
@@ -194,7 +193,10 @@
 	border: 1px solid #cccccc;
     border-radius: 50%;
 	background: #ccc;
-	font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
 	color: #1c94c4;
     background: rgb(209, 225, 216);
     background: -moz-linear-gradient(91deg, rgb(209, 225, 216) 30%, rgb(227, 234, 241) 70%);

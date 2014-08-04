@@ -23,15 +23,15 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <p>Radius:</p>
-                            <div class="ui-radius ui-slider ui" data-min="0" data-max="50" data-css="borderR"></div>
+                            <div class="ui-radius ui-slider ui" data-min="0" data-max="50" data-css="borderR" data-def="8"></div>
                         </div>
                         <div class="col-sm-4">
                             <p>Width:</p>
-                            <div class="ui-border_width ui-slider ui" data-min="0" data-max="10" data-css="borderW"></div>
+                            <div class="ui-border_width ui-slider ui" data-min="0" data-max="10" data-css="borderW" data-def="1"></div>
                         </div>
                         <div class="col-sm-4">
                             <p>Style:</p>
-                            <select class="ui-border_style">
+                            <select class="ui-border_style ui-select form-control"data-css="borderS">
                                 <option value="solid">solid</option>
                                 <option value="dashed">dashed</option>
                                 <option value="dotted">dotted</option>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-sm-4">
                             <p>Color:</p>
-                            <div class="ui-border_color ui-color ui"></div>
+                            <div class="ui-border_color ui-color ui" data-css="borderC"></div>
                         </div>
                     </div>
                 </div>
@@ -51,18 +51,69 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <span>PaddingY</span>
-                            <div class="ui-padding_y ui-slider ui" data-min="0" data-max="50" data-css="paddingY"></div>
+                            <div class="ui-padding_y ui-slider ui" data-min="0" data-max="50" data-css="paddingY" data-def="10"></div>
                         </div>
                         <div class="col-sm-6">
                             <span>PaddingX</span>
-                            <div class="ui-padding_x ui-slider ui" data-min="0" data-max="50" data-css="paddingX"></div>
+                            <div class="ui-padding_x ui-slider ui" data-min="0" data-max="50" data-css="paddingX" data-def="10"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="well">
                 <p>Background</p>
-                <div class="ui-background_color ui-color ui"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 background-color">
+                            <p>Color:</p>
+                            <div class="ui-background_color ui-color ui" data-css="backgroundC"></div>
+                        </div>
+                        <div class="col-sm-12">
+
+                            <label>
+                                <p>Gradient:
+                                    <input type="checkbox" class="checkbox" data-helper="gradientOn" data-toggle=".gradient" data-toggle2=".background-color"/>
+                                </p>
+                            </label>
+                            <div class="gradient">
+                                <span>Start:
+                                    <div class="ui-background_gradient-start ui-color ui" data-css="backgroundGs"></div>
+                                </span>
+                                <span>End:
+                                    <div class="ui-background_gradient-end ui-color ui" data-css="backgroundGe"></div>
+                                </span>
+                                <span>Orientation:
+                                    <select class="ui-background_gradient-orientation ui-select ui form-control" data-css="backgroundGor">
+                                        <option value="to top">to top</option>
+                                        <option value="to bottom">to bottom</option>
+                                        <option value="to left">to left</option>
+                                        <option value="to right">to right</option>
+                                    </select>
+                                </span>
+                                <span>StartPos:
+                                    <div
+                                        class="ui-background_gradient-start_pos ui-slider ui"
+                                        data-min="0"
+                                        data-max="100"
+                                        data-css="backgroundGsp"
+                                        data-def="0"
+                                        data-unit="%">
+                                    </div>
+                                </span>
+                                <span>EndPos:
+                                    <div
+                                        class="ui-background_gradient-end_pos ui-slider ui"
+                                        data-min="0"
+                                        data-max="100"
+                                        data-css="backgroundGep"
+                                        data-def="100"
+                                        data-unit="%">
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="well">
                 <p>Text/Font</p>
@@ -74,18 +125,29 @@
                         </div>
                         <div class="col-sm-4">
                             <p>Size</p>
-                            <div class="ui-font_size ui-slider ui" data-min="10" data-max="50" data-css="fontSz"></div>
+                            <div class="ui-font_size ui-slider ui" data-min="10" data-max="50" data-css="fontSz" data-def="16"></div>
                         </div>
                         <div class="col-sm-4">
                             <p>Color</p>
-                            <div class="ui-font_color ui-color ui"></div>
+                            <div class="ui-font_color ui-color ui" data-css="fontC"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Shadow<input type="checkbox" id="shadow" class="ui-shadow"/></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="well">
                 <p>Class</p>
-                <span>.</span><input type="text" class="ui-class form-control"/>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span>.</span><input type="text" class="ui-class form-control"/>
+                        </div>
+                    </div>
+                </div>
             </div>
 		</div>
 		<div class="col-sm-6">
@@ -104,6 +166,16 @@
                 <pre class=" language-css">
                     <code id="result-css" class="result-textarea language-css"></code>
                 </pre>
+            </div>
+            <div class="well">
+                <p>Send to Email:</p>
+
+                <form action="/" class="form-email input-group">
+                    <input type="text" class="form-control form-inline"/>
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </span>
+                </form>
             </div>
 		</div>
 	</div>
