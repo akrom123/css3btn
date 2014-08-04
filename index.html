@@ -18,40 +18,80 @@
 	<div class="row">
 		<div class="col-sm-6">
             <div class="well">
-                <p>Border-radius</p>
-                <div class="ui-radius ui"></div>
+                <p>Border:</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Radius:</p>
+                            <div class="ui-radius ui-slider ui" data-min="0" data-max="50" data-css="borderR"></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>Width:</p>
+                            <div class="ui-border_width ui-slider ui" data-min="0" data-max="10" data-css="borderW"></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>Style:</p>
+                            <select class="ui-border_style">
+                                <option value="solid">solid</option>
+                                <option value="dashed">dashed</option>
+                                <option value="dotted">dotted</option>
+                                <option value="double">double</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>Color:</p>
+                            <div class="ui-border_color ui-color ui"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="well">
-                <p>Border-size</p>
-                <div class="ui-border_width ui"></div>
-            </div>
-            <div class="well">
-                <p>Padding horizontal</p>
-                <div class="ui-padding_x ui"></div>
-            </div>
-            <div class="well">
-                <p>Padding vertical</p>
-                <div class="ui-padding_y ui"></div>
+                <p>Paddings</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span>PaddingY</span>
+                            <div class="ui-padding_y ui-slider ui" data-min="0" data-max="50" data-css="paddingY"></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>PaddingX</span>
+                            <div class="ui-padding_x ui-slider ui" data-min="0" data-max="50" data-css="paddingX"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="well">
                 <p>Background</p>
-                <div class="ui-background_color ui"></div>
+                <div class="ui-background_color ui-color ui"></div>
             </div>
             <div class="well">
-                <p>Font Color</p>
-                <div class="ui-font_color ui"></div>
+                <p>Text/Font</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p>Text</p>
+                            <input type="text" class="ui-text form-control"/>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>Size</p>
+                            <div class="ui-font_size ui-slider ui" data-min="10" data-max="50" data-css="fontSz"></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>Color</p>
+                            <div class="ui-font_color ui-color ui"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="well">
-                <p>Text</p>
-                <input type="text" class="ui-text form-control"/>
+                <p>Class</p>
+                <span>.</span><input type="text" class="ui-class form-control"/>
             </div>
 		</div>
 		<div class="col-sm-6">
             <div class="well">
                 <p>Result Btn</p>
-                <button class="button">
-                asdasdasd
-                </button>
+                <div class="result-btn"></div>
             </div>
             <div class="well">
                 <p>Result HTML</p>
